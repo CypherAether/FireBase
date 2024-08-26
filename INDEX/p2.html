@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao Firebase</title>
+    <style>
+      /* Definição das fontes */
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Questrial&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+     
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #161615;
+        font-family: "Roboto", sans-serif;
+        color: white;
+      }
+
+     
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+    
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        background-color:#161615;
+        padding: 20px;
+        box-shadow: 0 0 10px (black);
+      }
+
+      
+      h1,
+      h2 {
+        font-family: "IBM Plex Mono", monospace;
+        color: white;
+        text-align: center;
+      }
+
+     
+      p {
+        margin-bottom: 15px;
+      }
+
+      
+      .services {
+        margin-top: 20px;
+      }
+
+      .service {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #161615;
+        border-left: 5px solid #007bff;
+      }
+
+      .service h2 {
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+
+      .service p {
+        margin-top: 5px;
+      }
+
+      /* Estilos para o rodapé */
+      footer {
+        margin-top: 30px;
+      }
+
+      .Rodape {
+        width: 100%;
+        height: 20vh; /* Usando viewport height para melhor adaptação */
+        background-color: #161615;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Estilos para as linhas com display flex */
+      .row {
+        display: flex;
+      }
+
+      /* Estilos para a navegação */
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      /* Estilos para as colunas */
+      .col {
+        flex: 1;
+        text-align: center;
+      }
+
+      /* Estilos específicos para a página inicial */
+      .topo {
+        width: 100%;
+        height: 40vh;
+        background-color: #161615;
+        color: white;
+        background-image: url(../IMG/bannerfirebase.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .conteudo {
+        width: 80%;
+        background-color: #161615;
+        padding: 25px;
+        margin: 0 auto;
+      }
+
+      
+      .Rodape a {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Introdução ao Firebase</h1>
+      </header>
+      <section>
+        <p>
+          O Firebase é uma plataforma poderosa para o desenvolvimento de
+          aplicativos móveis e web, oferecendo uma ampla gama de serviços
+          integrados na nuvem pelo Google.
+        </p>
+        <p>
+          Originalmente adquirida pelo Google em 2014, o Firebase evoluiu para
+          se tornar uma solução abrangente para desenvolvedores, facilitando
+          desde o desenvolvimento até a distribuição e análise de aplicativos.
+        </p>
+      </section>
+      <section class="services">
+        <div class="service">
+          <h2>Firebase</h2>
+          <p>
+            Um banco de dados NoSQL em tempo real que permite armazenar e
+            sincronizar dados entre clientes.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Autentificação</h2>
+          <p>
+            Gerenciamento completo de autenticação de usuários, incluindo
+            autenticação por e-mail/senha e redes sociais.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Armazenamento</h2>
+          <p>
+            Armazenamento de arquivos na nuvem, ideal para imagens, vídeos e
+            outros conteúdos acessados pelos usuários.
+          </p>
+        </div>
+        <div class="service">
+          <h2>Hosteando</h2>
+          <p>
+            Hospedagem de conteúdo estático e dinâmico diretamente nos
+            servidores do Firebase, com SSL gratuito.
+          </p>
+        </div>
+      </section>
+      <footer class="Rodape">
+        <p>
+          Para mais informações, visite
+          <a href="https://firebase.google.com/">Firebase</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
